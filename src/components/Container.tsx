@@ -12,7 +12,8 @@ export function Container({children, ...props}: ViewProps) {
       {...props}>
       <ScrollView
         showsVerticalScrollIndicator={false}
-        showsHorizontalScrollIndicator={false}>
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={styles.container}>
         {children}
       </ScrollView>
     </SafeAreaView>
